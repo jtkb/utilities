@@ -4,9 +4,12 @@
 
   <groupId>com.javatechnics</groupId>
   <artifactId>file-renamer</artifactId>
-  <version>1.0.0</version>
   <packaging>maven-plugin</packaging>
-
+  <parent>
+        <groupId>com.javatechnics</groupId>
+        <artifactId>utilities</artifactId>
+        <version>1.0.0</version>
+   </parent>
   <name>file-renamer Maven Plugin</name>
 
   <!-- FIXME change it to the project's website -->
@@ -15,7 +18,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+  
   <dependencies>
     <dependency>
       <groupId>org.apache.maven</groupId>
